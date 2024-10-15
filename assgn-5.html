@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game</title>
+    <style>
+        #Box1{ cursor: pointer;}
+        p{width: 100px; height:20px;
+         color: aquamarine;border: 2px solid ;}
+        body{background-color: rgb(25, 43, 37);}
+        h1{color: rgb(44, 104, 72);font-size: medium;}
+    </style>
+</head>
+<body>
+    <h1>Let us play a simple mouse game to 
+    change color and improve our motor skills 😃:</h1>
+<p>Mousedown ↓</p>
+<div id="Box1">Box1</div>
+<p> Mouseenter ↓</p>
+<div id="Box2">Box2</div>
+<p>Mouseleave ↓</p>
+<div id="Box3">Box3</div>
+<p>Mousemove ↓</p>
+<div id="Box4">Box4</div>
+<p>Mouseout ↓</p>
+<div id="Box5">Box5</div>
+<p>Mousover ↓</p>
+<div id="Box6">Box6</div>
+<p>Mouseup ↓</p>
+<div id="Box7">Box7</div>
+
+<script>
+const Box1 = document.getElementById("Box1");
+let colors=['green','lightgreen','darkgreen'];
+let index=0
+function ChangeColor(event){
+ Box1.style.backgroundColor=colors[index]
+ index=(index+1)%colors.length
+}
+Box1.addEventListener("mousedown", ChangeColor)
+
+const Box2 = document.getElementById("Box2");
+let colors2=['green','lightgreen','darkgreen'];
+let index2=0
+function ChangeColor2(event){
+ Box2.style.backgroundColor=colors2[index2]
+ index2=(index2+1)%colors2.length
+}
+Box2.addEventListener("mouseenter", ChangeColor2)
+
+const Box3 = document.getElementById("Box3");
+let colors3=['green','lightgreen','darkgreen'];
+let index3=0
+function ChangeColor3(event){
+ Box3.style.backgroundColor=colors3[index3]
+ index3=(index3+1)%colors3.length
+}
+Box3.addEventListener("mouseleave", ChangeColor3)
+
+const Box4 = document.getElementById("Box4");
+let colors4=['green','lightgreen','darkgreen'];
+let index4=0
+function ChangeColor4(event){
+ Box4.style.backgroundColor=colors4[index4]
+ index4=(index4+1)%colors4.length
+}
+Box4.addEventListener("mousemove", ChangeColor4)
+
+const Box5 = document.getElementById("Box5");
+let colors5=['green','lightgreen','darkgreen'];
+let index5=0
+function ChangeColor5(event){
+ Box5.style.backgroundColor=colors5[index5]
+ index5=(index5+1)%colors5.length
+}
+Box5.addEventListener("mouseout", ChangeColor5)
+
+const Box6 = document.getElementById("Box6");
+let colors6=['green','lightgreen','darkgreen'];
+let index6=0
+function ChangeColor6(event){
+ Box6.style.backgroundColor=colors6[index6]
+ index6=(index6+1)%colors6.length
+}
+Box6.addEventListener("mouseover", ChangeColor6)
+
+const Box7 = document.getElementById("Box7");
+let colors7=['green','lightgreen','darkgreen'];
+let index7=0
+function ChangeColor7(event){
+ Box7.style.backgroundColor=colors7[index7]
+ index7=(index7+1)%colors7.length
+}
+Box7.addEventListener("mouseup", ChangeColor7)
+
+</script>
+</body>
+</html>
